@@ -1,0 +1,24 @@
+@mixin atSmall {
+  @media screen and (max-width: 520px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media screen and (min-width: 521px) {
+    @content;
+  }
+}
+
+@mixin flex($justifyContent: null, $alignItems: null, $direction: null) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $direction;
+}
+@mixin flexCenter($direction: null) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}

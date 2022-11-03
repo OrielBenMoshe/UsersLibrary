@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Heebo;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#root,
+.App {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 18px;
+  margin: 0 0 24px 0;
+  font-weight: 300;
+}
+
+@include atSmall {
+  p {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 46px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+}
+
+
+.App {
+  // background: #E6DADA;
+  // background: -webkit-linear-gradient(to right, #274046, #E6DADA);
+  // background: linear-gradient(to right, #274046, #E6DADA);
+  background: linear-gradient(180deg, rgba(41, 38, 38, 1) 0%, rgba(155, 96, 155, 1) 100%);
+
+  @include atSmall {
+    padding-block: 20px;
+    padding-inline: 30px;
+  }
+
+  @include atMedium {
+    padding-block: 40px;
+    padding-inline: 100px;
+  }
+
+
+}
+
+.loading, .error {
+  height: 100%;
+  width: 100%;
+  font-size: 72px;
+  text-align: center;
+  text-shadow: 0 0 2px black;
+  color: rgba(237, 181, 38, 1);
+}

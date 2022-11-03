@@ -1,0 +1,79 @@
+.editable-cell {
+    position: relative;
+}
+
+.editable-cell-value-wrap {
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.editable-row:hover .editable-cell-value-wrap {
+    padding: 4px 11px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+}
+
+[data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+    border: 1px solid #434343;
+}
+
+.ant-table {
+    background-color: #dfdfdf59 !important;
+
+    .ant-table-row {
+        text-shadow: 0 0 2px black;
+        color: white;
+
+        mark {
+            text-shadow: none;
+        }
+
+        a {
+            color: #edb526;
+
+            &:hover {
+                color: rgb(253, 215, 63);
+                ;
+            }
+        }
+    }
+
+    input {
+        border-color: #fdd73f;
+        background: #ffffff9c;
+        color: inherit;
+    }
+
+    .userImage {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+thead tr {
+    box-shadow: 0px 3px 7px 0px black;
+}
+
+.ant-table-tbody>tr.ant-table-row:hover>td,
+.ant-table-tbody>tr>td.ant-table-cell-row-hover {
+    background: #fafafabc;
+    color: initial;
+    text-shadow: none;
+
+    a {
+        text-shadow: 0 0 2px black;
+    }
+}
+
+button.ant-btn-primary {
+    background: linear-gradient(90deg, #fdd73f, #f6c732, rgba(237,181,38,1));
+    border-color: initial;
+    transition: background 0.3s ease-in-out;
+    &:hover, &:active {
+        background: linear-gradient(90deg, #d7a723, #f2c737, #ba911f);
+    }
+}
+
+.ant-table-cell-fix-right, .ant-table-cell-fix-left {
+    background-color: grey;
+}
