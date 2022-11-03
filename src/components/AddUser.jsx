@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Button, Modal, Form, Input } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 
-export default function AddUser({ handleAdd, data }) {
+export default function AddUser({ handleAdd, emails }) {
     const formRef = useRef()
     const [open, setOpen] = useState(false);
     const [confirmLoading, setConfirmLoading] = useState(false);
